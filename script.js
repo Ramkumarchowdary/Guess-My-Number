@@ -23,8 +23,6 @@ document.querySelector('.check').addEventListener('click',function(){
     if(!guess){
         document.querySelector('.message').textContent='no number!🤷‍♀️';
         // the correct number 
-    }else if(guess>secretNumber){
-        document.querySelector('.message').textContent='invallied number🤯';
     }
     else if(guess===secretNumber) {
        document.querySelector ('.message').textContent='correct number😉';
@@ -85,3 +83,6 @@ document.querySelector('.again').addEventListener('click',function(){
 
 
 }) ;
+if(guess>secretNumber){
+    document.querySelector('.message').textContent='invallied number🤯';
+}
